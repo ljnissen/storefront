@@ -5,6 +5,7 @@ class CreateShopengItems < ActiveRecord::Migration
       t.string :title
       t.text :text
       t.string :category_id
+      t.string :image
 
       t.timestamps
     end

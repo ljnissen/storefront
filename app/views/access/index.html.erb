@@ -1,0 +1,29 @@
+<% @page_title = "Admin Menu" %>
+
+<div class="container">
+	<h2>Admin Menu</h2>
+	<div class="navbar navbar-default">Logged in as: <%= session[:username] %></div>
+	<table class="table table-striped">
+	  <tbody>
+		<tr>
+			<td><%= link_to("Manage Categories", shop.categories_path) %>
+			</td>
+		</tr>
+		<tr>
+			<td><%= link_to("Manage Items", shop.items_path) %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= link_to("Manage Admin Users", :controller => 'admin_users') %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= link_to("Logout", :action => 'logout') %>
+			</td>
+		</tr>
+
+	  </tbody>
+	</table>
+</div>

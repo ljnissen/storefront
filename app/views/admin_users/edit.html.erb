@@ -1,0 +1,20 @@
+<% @page_title = 'Edit Admin User' %>
+
+
+
+<div class="user new">
+	<h2>Create Admin User</h2>
+
+	<%= form_for(:admin_user, :url => {:action => 'update', :id => @admin_user.id}) do |f| %>
+
+		<%= render(:partial => 'form', :locals => {:f => f} ) %>
+		<hr>
+		<div class="form-buttons">
+			<%= submit_tag 'Update Admin User', :class => 'btn btn-success' %>
+		</div>
+	<% end %>
+</div>
+
+<hr>
+
+<%= link_to("Back to List", {:action => 'index'}, :class => 'btn btn-primary btn-lg') %>

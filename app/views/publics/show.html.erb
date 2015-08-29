@@ -1,0 +1,9 @@
+<% @category_title = @category.name %>
+
+<h2><%= @category.name %></h2>
+
+<% @category.items.sorted.each do |item| %>
+	<div class="items">
+		<p>item.content</p>
+	</div>
+<% end %>

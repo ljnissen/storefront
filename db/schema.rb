@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150110172552) do
+ActiveRecord::Schema.define(version: 20150814160643) do
+
+  create_table "admin_users", force: true do |t|
+    t.string   "first_name",      limit: 25
+    t.string   "last_name",       limit: 50
+    t.string   "email",                      default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+    t.string   "username",        limit: 25
+  end
 
   create_table "shopeng_categories", force: true do |t|
     t.string   "title"
@@ -23,8 +33,10 @@ ActiveRecord::Schema.define(version: 20150110172552) do
     t.string   "title"
     t.text     "text"
     t.string   "category_id"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "price",       limit: 25
   end
 
 end

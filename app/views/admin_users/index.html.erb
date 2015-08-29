@@ -1,0 +1,35 @@
+<% @page_title = "Admin Users List" %>
+
+
+
+<div class="container">
+	<h2>Admin Users</h2>
+	<div class="row">
+		<% link_to('Add new Admin User', {:action => 'new'}, :class => 'action new') %>
+
+		<div class="col-md-4"><%= pluralize(@admin_users.size, 'admin user') %> found</div><br/>
+
+		<table class="table table-striped" summary="Admin users list">
+			<tr>
+				<th>Username</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Actions</th>
+			</tr>
+			<% @admin_users.each do |admin_user| %>
+			<tbody>
+				<td><%= admin_user.username %></td>
+				<td><%= admin_user.name %></td>
+				<td><%= mail_to(admin_user.email) %></td>
+				<td class="col-md-4">
+					<%= link_to('New', {:action => 'new', :id => admin_user.id }, class: "btn btn-success") %>
+					<%= link_to('Edit', {:action => 'edit', :id => admin_user.id }, :class => 'btn btn-default') %>
+					<%= link_to('Delete', {:action => 'delete', :id => admin_user.id}, :class => 'btn btn-danger') %>
+					<%= link_to("Logout", {:controller => 'access', :action => 'logout'}, :class => 'btn btn-warning') %>
+				</td>
+			</tbody>
+			<% end %>
+		</table>
+		<%= link_to("Back to Menu", {:controller => 'access', :action => 'index'}, :class => 'btn btn-primary') %>
+	</div>
+</div>

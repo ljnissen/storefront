@@ -1,9 +1,22 @@
 Shopapp::Application.routes.draw do
-  get "home/index"
+  
 
-  root :to => "home#index"
+  root "publics#index"
 
-  mount Shopeng::Engine => "/shop"
+  get 'shop/show', :to => "public#index"
+  get 'admin', :to => "access#index"
+  get 'login', :to => "access#login"
+  get 'logout', :to => "access#logout"
+
+  resources :items
+
+  resources :categories do
+    resources :items
+  end
+
+  match ':controller(/:action(/:id))', :via => [:get, :post]
+
+  mount Shopeng::Engine => "/shop", :as => "shop"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

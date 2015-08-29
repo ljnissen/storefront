@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'shopeng', :path => 'C:/Sites/shopeng'
+gem 'shopeng', :path => 'C:/Users/Johan/Documents/Sites/shopeng'
 
-gem 'rmagick'
+gem 'mini_magick'
 
 gem 'bootstrap-sass'
 
@@ -40,8 +40,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+#Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'

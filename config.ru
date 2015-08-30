@@ -1,4 +1,12 @@
-# This file is used by Rack-based servers to start the application.
+#config.ru
+require 'shopeng'
+require './config/environment.rb'
 
-require ::File.expand_path('../config/environment',  __FILE__)
+use Rack::Static, :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico'], :root => 'public'
+use Rack::ShowExceptions
+use Rack::CommonLogger
+
+# Run application
+use Rails::Rack::Debugger
+use Rack::ContentLength
 run Rails.application

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'shopeng', :path => '../shopeng'
+gem 'shopeng', :path => './shopeng'
 
 gem 'mini_magick'
 
@@ -11,8 +11,7 @@ gem 'twitter-bootstrap-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
 
-# Use sqlite3 as the database for Active Record
-gem 'pg'
+# Use sqlite3 as the database for Active Recor
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -40,6 +39,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'debugger', group: [:development, :test]
+
 #Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -55,4 +56,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+ gem 'debugger', group: [:development, :test]

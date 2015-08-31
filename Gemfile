@@ -12,6 +12,7 @@ gem 'twitter-bootstrap-rails'
 gem 'rails', '4.0.13'
 
 # Use sqlite3 as the database for Active Recor
+gem 'sqlite3' 
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -45,7 +46,7 @@ gem 'debugger', group: [:development, :test]
 gem 'bcrypt', '~> 3.1.7'
 
 group :production do
-	gem 'pg', '0.17.1'
+	gem 'sqlite3'
 	gem 'rails_12factor', '0.0.2'
 end
 
@@ -56,4 +57,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
- gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]

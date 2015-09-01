@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'shopeng', :path => './shopeng'
+gem 'shopeng', :path => './vendor/shopeng'
 
 gem 'mini_magick'
 

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 #gem 'shopeng', :path => './vendor/shopeng' 
 
-gem "shopeng", :git => "git@github.com:ljnissen/shopeng.git"
+gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
 
 gem 'mini_magick'
 

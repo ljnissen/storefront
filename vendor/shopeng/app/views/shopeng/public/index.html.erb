@@ -1,0 +1,25 @@
+<div class="container">
+	<h1><%= notice %></h1>
+
+	<div class="row">
+	
+
+		<% @items.each do |item| %>
+		  <div>
+			<div class="col-md-3">	
+				<div class="well">
+					<%= image_tag item.image_url(:thumb).to_s %>
+					<h3><%= item.title %></h3>
+
+					<p>
+						<%= truncate(item.text, length: 80, omission: "...") %>
+					</p>
+					<p>
+						<%= link_to("View details",{ :action => 'show', :id => item.id }, :class => 'btn btn-default') %>
+					</p>
+				</div>
+			</div>
+		  </div>
+		<% end %>
+	</div>
+</div>

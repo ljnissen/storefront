@@ -1,0 +1,35 @@
+<div class="container">
+	<h1><%= notice %></h1>
+
+	<div class="row">
+		<strong>Title:</strong>
+		<%= @category.title %>
+	
+
+		<% @category.items.each do |item| %>
+		  <div>
+			<div class="col-md-3">	
+				<div class="well">
+					<%= image_tag item.image_url(:thumb).to_s %>
+					<h3><%= item.title %></h3>
+
+					<p>
+						<%= truncate(item.text, length: 80, omission: "...") %>
+					</p>
+					<p>
+						<%= link_to "View details", item_path(item), :class => 'btn btn-default' %>
+					</p>
+				</div>
+			</div>
+		  </div>
+		<% end %>
+	</div>
+
+	<div class="btn">
+		<%= link_to 'Edit', edit_category_path(@category), :class => 'btn btn-primary ' %> 
+		<%= link_to 'Back', categories_path, :class => 'btn btn-default' %>
+		<%= link_to 'New item', new_category_item_path(@category), :class => 'btn btn-info' %>
+	</div>
+	<hr>
+	<%= link_to("Back to Menu", main_app.admin_url, :class => 'btn btn-primary btn-lg') %>
+</div>

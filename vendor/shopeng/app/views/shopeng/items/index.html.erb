@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Listing items</h1>
+
+      <table class="table table-striped">
+          <thead>
+                <tr>
+                  <th class="col-md-5">Title</th>
+                  <th class="col-md-5">Text</th> 
+                  
+                </tr>
+          </thead>
+     
+          <tbody>
+              <% @items.each do |item| %>
+                    <tr>
+                      <td><%= item.title %></td>
+                      <td><%= item.text %></td>
+                      
+                    
+                     <td><%= link_to 'Show', item, :class => 'btn btn-default' %></td>  
+                      <td><%= link_to 'Edit', edit_item_path(item.id), :class => 'btn btn-primary' %></td>
+                      <td><%= link_to 'Remove', item, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' %></td>
+                    </tr>
+              <% end %>
+          </tbody>
+      </table>
+
+      <br>
+
+        <%= link_to 'New Item', new_item_path, :class => 'btn btn-info' %><hr>
+        <%= link_to("Back to Menu", main_app.admin_url, :class => 'btn btn-primary btn-lg') %>
+</div>

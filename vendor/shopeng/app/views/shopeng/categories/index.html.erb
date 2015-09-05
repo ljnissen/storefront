@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Listing categories</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+  
+
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.title %></td>
+            <td class=""col-md-4>
+              <%= link_to 'Show', category, :class => 'btn btn-primary' %>
+              <%= link_to 'Edit', edit_category_path(category), :class => 'btn btn-default' %>
+              <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %>
+            </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Category', new_category_path, :class => 'btn btn-primary' %>
+
+
+
+</div>

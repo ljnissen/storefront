@@ -4,7 +4,7 @@ PATH
     shopeng (0.0.1)
       carrierwave
       mini_magick
-      pg (~> 0.17.1)
+      pg
       rails (~> 4.0.13)
 
 GEM

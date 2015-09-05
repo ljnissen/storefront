@@ -1,10 +1,10 @@
 PATH
-  remote: ./shopeng
+  remote: ./vendor/shopeng
   specs:
     shopeng (0.0.1)
       carrierwave
       mini_magick
-      pg
+      pg (~> 0.17.1)
       rails (~> 4.0.13)
 
 GEM
@@ -155,7 +155,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.2)
   sdoc
   shopeng!
-  sqlite3
+  sqlite3 (= 1.3.10)
   turbolinks
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)

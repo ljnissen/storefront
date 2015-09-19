@@ -1,7 +1,7 @@
 module Shopeng
   class Public < ActiveRecord::Base
     def next
-		if Item.order("id ASC").where("id > ?", id).first
+		Item.order("id ASC").where("id > ?", id).first
 	
 	end
 

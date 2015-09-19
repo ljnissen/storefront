@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+
+
+ruby '1.9.3'
+
 gem 'shopeng', :path => './vendor/shopeng' 
 
 #gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
@@ -55,6 +59,8 @@ group :production do
 	gem 'pg', '0.17.1'
 	gem 'rails_12factor', '0.0.2'
 end
+
+#gem 'puma'
 
 # Use unicorn as the app server
 # gem 'unicorn'

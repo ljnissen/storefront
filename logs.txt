@@ -301,3 +301,104 @@
 2015-09-19T16:54:36.836323+00:00 heroku[run.1707]: State changed from starting to up
 2015-09-19T16:54:44.343763+00:00 heroku[run.1707]: Process exited with status 0
 2015-09-19T16:54:44.353722+00:00 heroku[run.1707]: State changed from up to complete
+2015-09-19T17:44:12.468365+00:00 app[web.1]: /app/vendor/shopeng/lib/shopeng/engine.rb:2:in `<module:Shopeng>': uninitialized constant Rails (NameError)
+2015-09-19T17:44:12.468368+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng/engine.rb:1:in `<top (required)>'
+2015-09-19T17:44:12.468369+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `require'
+2015-09-19T17:44:12.468371+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `<top (required)>'
+2015-09-19T17:44:12.468374+00:00 app[web.1]: 	from config.ru:2:in `require'
+2015-09-19T17:44:12.468376+00:00 app[web.1]: 	from config.ru:2:in `block in <main>'
+2015-09-19T17:44:12.468377+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `instance_eval'
+2015-09-19T17:44:12.468380+00:00 app[web.1]: 	from config.ru:in `new'
+2015-09-19T17:44:12.468383+00:00 app[web.1]: 	from config.ru:in `<main>'
+2015-09-19T17:44:12.468379+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `initialize'
+2015-09-19T17:44:12.463044+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2015-09-19T17:44:12.468385+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `eval'
+2015-09-19T17:44:12.468386+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `new_from_string'
+2015-09-19T17:44:12.468387+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:40:in `parse_file'
+2015-09-19T17:44:12.463078+00:00 app[web.1]: [3] * Version 2.11.1 (ruby 1.9.3-p551), codename: Intrepid Squirrel
+2015-09-19T17:44:12.463080+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2015-09-19T17:44:12.468391+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/configuration.rb:107:in `app'
+2015-09-19T17:44:12.468399+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `load'
+2015-09-19T17:44:12.468400+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `<main>'
+2015-09-19T17:44:12.468398+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/bin/puma:10:in `<top (required)>'
+2015-09-19T17:44:12.463083+00:00 app[web.1]: [3] * Process workers: 2
+2015-09-19T17:44:12.468392+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/runner.rb:113:in `load_and_bind'
+2015-09-19T17:44:12.463081+00:00 app[web.1]: [3] * Environment: production
+2015-09-19T17:44:12.463084+00:00 app[web.1]: [3] * Preloading application
+2015-09-19T17:44:12.467985+00:00 app[web.1]: [3] ! Unable to load application: NameError: uninitialized constant Rails
+2015-09-19T17:44:12.468393+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cluster.rb:301:in `run'
+2015-09-19T17:44:12.468394+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cli.rb:512:in `run'
+2015-09-19T17:44:13.228632+00:00 heroku[web.1]: State changed from starting to crashed
+2015-09-19T17:44:13.215371+00:00 heroku[web.1]: Process exited with status 1
+2015-09-19T18:22:50.857138+00:00 heroku[slug-compiler]: Slug compilation started
+2015-09-19T18:22:50.857160+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-09-19T18:22:50.797398+00:00 heroku[api]: Deploy a2a59c0 by lj_nissen@gmx.de
+2015-09-19T18:22:50.797493+00:00 heroku[api]: Release v12 created by lj_nissen@gmx.de
+2015-09-19T18:22:51.195345+00:00 heroku[web.1]: State changed from crashed to starting
+2015-09-19T18:23:00.685917+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2015-09-19T18:23:06.735676+00:00 app[web.1]: /app/vendor/shopeng/lib/shopeng/engine.rb:2:in `<module:Shopeng>': uninitialized constant Rails (NameError)
+2015-09-19T18:23:06.735704+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng/engine.rb:1:in `<top (required)>'
+2015-09-19T18:23:06.735777+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `require'
+2015-09-19T18:23:06.735796+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `<top (required)>'
+2015-09-19T18:23:06.735814+00:00 app[web.1]: 	from config.ru:2:in `require'
+2015-09-19T18:23:06.735848+00:00 app[web.1]: 	from config.ru:2:in `block in <main>'
+2015-09-19T18:23:06.735866+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `instance_eval'
+2015-09-19T18:23:06.735883+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `initialize'
+2015-09-19T18:23:06.735905+00:00 app[web.1]: 	from config.ru:in `new'
+2015-09-19T18:23:06.735969+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `eval'
+2015-09-19T18:23:06.735940+00:00 app[web.1]: 	from config.ru:in `<main>'
+2015-09-19T18:23:06.735994+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `new_from_string'
+2015-09-19T18:23:06.736042+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/configuration.rb:107:in `app'
+2015-09-19T18:23:06.736018+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:40:in `parse_file'
+2015-09-19T18:23:06.736073+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/runner.rb:113:in `load_and_bind'
+2015-09-19T18:23:06.736092+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cluster.rb:301:in `run'
+2015-09-19T18:23:06.736110+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cli.rb:512:in `run'
+2015-09-19T18:23:06.736127+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/bin/puma:10:in `<top (required)>'
+2015-09-19T18:23:06.736147+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `load'
+2015-09-19T18:23:06.736165+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `<main>'
+2015-09-19T18:23:06.719040+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2015-09-19T18:23:06.719238+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2015-09-19T18:23:06.719187+00:00 app[web.1]: [3] * Version 2.11.1 (ruby 1.9.3-p551), codename: Intrepid Squirrel
+2015-09-19T18:23:06.719283+00:00 app[web.1]: [3] * Environment: production
+2015-09-19T18:23:06.719343+00:00 app[web.1]: [3] * Process workers: 2
+2015-09-19T18:23:06.719390+00:00 app[web.1]: [3] * Preloading application
+2015-09-19T18:23:06.735021+00:00 app[web.1]: [3] ! Unable to load application: NameError: uninitialized constant Rails
+2015-09-19T18:23:07.817472+00:00 heroku[web.1]: Process exited with status 1
+2015-09-19T18:23:07.837134+00:00 heroku[web.1]: State changed from starting to crashed
+2015-09-19T18:23:07.838429+00:00 heroku[web.1]: State changed from crashed to starting
+2015-09-19T18:23:15.179933+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2015-09-19T18:23:17.575514+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2015-09-19T18:23:17.575547+00:00 app[web.1]: [3] * Version 2.11.1 (ruby 1.9.3-p551), codename: Intrepid Squirrel
+2015-09-19T18:23:17.575548+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2015-09-19T18:23:17.575550+00:00 app[web.1]: [3] * Environment: production
+2015-09-19T18:23:17.575551+00:00 app[web.1]: [3] * Process workers: 2
+2015-09-19T18:23:17.575552+00:00 app[web.1]: [3] * Preloading application
+2015-09-19T18:23:17.587524+00:00 app[web.1]: [3] ! Unable to load application: NameError: uninitialized constant Rails
+2015-09-19T18:23:17.587836+00:00 app[web.1]: /app/vendor/shopeng/lib/shopeng/engine.rb:2:in `<module:Shopeng>': uninitialized constant Rails (NameError)
+2015-09-19T18:23:17.587839+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng/engine.rb:1:in `<top (required)>'
+2015-09-19T18:23:17.587841+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `require'
+2015-09-19T18:23:17.587843+00:00 app[web.1]: 	from /app/vendor/shopeng/lib/shopeng.rb:1:in `<top (required)>'
+2015-09-19T18:23:17.587848+00:00 app[web.1]: 	from config.ru:2:in `require'
+2015-09-19T18:23:17.587849+00:00 app[web.1]: 	from config.ru:2:in `block in <main>'
+2015-09-19T18:23:17.587851+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `instance_eval'
+2015-09-19T18:23:17.587853+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:55:in `initialize'
+2015-09-19T18:23:17.587854+00:00 app[web.1]: 	from config.ru:in `new'
+2015-09-19T18:23:17.587856+00:00 app[web.1]: 	from config.ru:in `<main>'
+2015-09-19T18:23:17.587874+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `new_from_string'
+2015-09-19T18:23:17.587872+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:49:in `eval'
+2015-09-19T18:23:17.587876+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb:40:in `parse_file'
+2015-09-19T18:23:17.587879+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/runner.rb:113:in `load_and_bind'
+2015-09-19T18:23:17.587878+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/configuration.rb:107:in `app'
+2015-09-19T18:23:17.587881+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cluster.rb:301:in `run'
+2015-09-19T18:23:17.587883+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/lib/puma/cli.rb:512:in `run'
+2015-09-19T18:23:17.587887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/puma-2.11.1/bin/puma:10:in `<top (required)>'
+2015-09-19T18:23:17.587889+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `load'
+2015-09-19T18:23:17.587891+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/bin/puma:23:in `<main>'
+2015-09-19T18:23:18.446521+00:00 heroku[web.1]: Process exited with status 1
+2015-09-19T18:23:18.461666+00:00 heroku[web.1]: State changed from starting to crashed
+2015-09-19T18:23:33.214872+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by lj_nissen@gmx.de
+2015-09-19T18:23:39.852024+00:00 heroku[run.3247]: Awaiting client
+2015-09-19T18:23:39.880180+00:00 heroku[run.3247]: Starting process with command `bundle exec rake db:migrate`
+2015-09-19T18:23:40.310481+00:00 heroku[run.3247]: State changed from starting to up
+2015-09-19T18:23:46.690640+00:00 heroku[run.3247]: Process exited with status 0
+2015-09-19T18:23:46.696556+00:00 heroku[run.3247]: State changed from up to complete

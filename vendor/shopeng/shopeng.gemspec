@@ -7,11 +7,11 @@ require "shopeng/version"
 Gem::Specification.new do |s|
   s.name        = "shopeng"
   s.version     = Shopeng::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Shopeng."
-  s.description = "TODO: Description of Shopeng."
+  s.authors     = ["LJ Nissen"]
+  s.email       = ["lj@ljnissen.com"]
+  s.homepage    = "http::/ljnissen.com"
+  s.summary     = "Summary of Shopeng."
+  s.description = "Description of Shopeng."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

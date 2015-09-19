@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 
+
 gem 'shopeng', :path => './vendor/shopeng' 
 
 #gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
@@ -56,6 +57,7 @@ gem 'debugger', group: [:development, :test]
 gem 'bcrypt', '~> 3.1.7'
 
 group :production do
+	gem 'shopeng', :path => './vendor/shopeng'
 	gem 'pg', '0.17.1'
 	gem 'rails_12factor', '0.0.2'
 	gem 'puma', '2.11.1'

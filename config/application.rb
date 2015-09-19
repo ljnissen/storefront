@@ -1,4 +1,4 @@
-require './vendor/shopeng/lib/shopeng/engine.rb'
+
 
 require File.expand_path('../boot', __FILE__)
 

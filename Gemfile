@@ -5,9 +5,9 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 
-gem 'shopeng' 
+ #gem 'shopeng'
 
-#gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
+gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
 
 gem 'mini_magick'
 
@@ -51,13 +51,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 #Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
 group :production do
-	gem 'shopeng'
 	gem 'pg', '0.17.1'
 	gem 'rails_12factor', '0.0.2'
 	gem 'puma', '2.11.1'
@@ -72,5 +71,5 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+#Use debugger
+gem 'debugger', group: [:development, :test]

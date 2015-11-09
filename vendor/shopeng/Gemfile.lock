@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    shopeng (0.0.1)
-      carrierwave
-      mini_magick
-      pg (~> 0.17.1)
-      rails (~> 4.0.13)
+    #shopeng (0.0.1)
+      #carrierwave
+      #mini_magick
+      #pg (~> 0.17.1)
+      #rails (~> 4.0.13)
 
 GEM
   remote: https://rubygems.org/

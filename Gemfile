@@ -7,7 +7,9 @@ ruby '1.9.3'
 
  #gem 'shopeng'
 
-gem "shopeng", :git => "git@github.com:ljnissen/shop_engine.git"
+
+
+gem 'carrierwave'
 
 gem 'mini_magick'
 

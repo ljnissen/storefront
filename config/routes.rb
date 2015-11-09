@@ -16,6 +16,8 @@ Shopapp::Application.routes.draw do
 
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
+  #mount Shopeng::Engine, at: :shop 
+
   mount Shopeng::Engine => "/shop", :as => "shop"
   
   # The priority is based upon order of creation: first created -> highest priority.

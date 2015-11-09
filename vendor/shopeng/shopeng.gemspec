@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Shopeng::VERSION
   s.authors     = ["LJ Nissen"]
   s.email       = ["lj@ljnissen.com"]
-  s.homepage    = "http::/ljnissen.com"
+  s.homepage    = "http://ljnissen.com"
   s.summary     = "Summary of Shopeng."
   s.description = "Description of Shopeng."
 

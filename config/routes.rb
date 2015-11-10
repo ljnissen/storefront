@@ -3,6 +3,7 @@ Shopapp::Application.routes.draw do
 
   root "publics#index"
 
+
   get 'shop/show', :to => "public#index"
   get 'admin', :to => "access#index"
   get 'login', :to => "access#login"
